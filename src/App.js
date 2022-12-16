@@ -145,6 +145,7 @@ function App() {
       }}
     >
       <ToastContainer theme='colored' />
+      <Navbar />
       <Routes>
         <Route path='/' element={<Navigate to='/contacts' />} />
         <Route path='/contacts' element={<Contacts />} />

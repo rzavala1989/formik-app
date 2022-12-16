@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Leanne Graham",
       "email": "Sincere@april.biz",
-      "group": 2,
+      "group": "Friend",
       "mobile": "1-770-736-8031",
       "website": "hildegard.org",
       "job": "Accountant"
@@ -13,7 +13,7 @@
       "id": 2,
       "name": "Ervin Howell",
       "email": "Shanna@melissa.tv",
-      "group": 2,
+      "group": "Friend",
       "mobile": "010-692-6593",
       "website": "anastasia.net",
       "job": "Financial Analyst"
@@ -22,7 +22,7 @@
       "id": 3,
       "name": "Clementine Bauch",
       "email": "Nathan@yesenia.net",
-      "group": 2,
+      "group": "Friend",
       "mobile": "1-463-123-4447",
       "website": "ramiro.info",
       "job": "Software Engineer"
@@ -31,7 +31,7 @@
       "id": 4,
       "name": "Patricia Lebsack",
       "email": "Julianne.OConner@kory.org",
-      "group": 3,
+      "group": "Family",
       "mobile": "493-170-9623",
       "website": "kale.biz",
       "job": "Karate Instructor"
@@ -40,7 +40,7 @@
       "id": 5,
       "name": "Chelsey Dietrich",
       "email": "Lucio_Hettinger@annie.ca",
-      "group": 3,
+      "group": "Family",
       "mobile": "(254)954-1289",
       "website": "demarco.info",
       "job": "Teacher"
@@ -49,7 +49,7 @@
       "id": 6,
       "name": "Mrs. Dennis Schulist",
       "email": "Karley_Dach@jasper.info",
-      "group": 3,
+      "group": "Family",
       "mobile": "1-477-935-8478",
       "website": "ola.org",
       "job": "Doctor"
@@ -58,7 +58,7 @@
       "id": 7,
       "name": "Kurtis Weissnat",
       "email": "Telly.Hoeger@billy.biz",
-      "group": 1,
+      "group": "Acquiantance",
       "mobile": "210.067.6132",
       "website": "elvis.io",
       "job": "Lawyer"
@@ -67,7 +67,7 @@
       "id": 8,
       "name": "Nicholas Runolfsdottir V",
       "email": "Sherwood@rosamond.me",
-      "group": 1,
+      "group": "Acquiantance",
       "mobile": "586.493.6943",
       "website": "jacynthe.com",
       "job": "Construction Foreman"
@@ -76,7 +76,7 @@
       "id": 9,
       "name": "Glenna Reichert",
       "email": "Chaim_McDermott@dana.io",
-      "group": 1,
+      "group": "Acquiantance",
       "mobile": "(775)976-6794",
       "website": "conrad.com",
       "job": "Animal Trainer"
@@ -85,7 +85,7 @@
       "id": 10,
       "name": "Clementina DuBuque",
       "email": "Rey.Padberg@karina.biz",
-      "group": 1,
+      "group": "Acquiantance",
       "mobile": "024-648-3804",
       "website": "Banker"
     },
@@ -93,24 +93,11 @@
       "id": 12,
       "name": "Ricardo Zav",
       "email": "ggggg@karina.biz",
-      "group": 1,
+      "group": "Acquiantance",
       "mobile": "702-848-3809",
       "website": "www.www.com",
       "job": "Tester"
     }
   ],
-  "groups": [
-    {
-      "id": 1,
-      "name": "Acquaintance"
-    },
-    {
-      "id": 2,
-      "name": "Friend"
-    },
-    {
-      "id": 3,
-      "name": "Family"
-    }
-  ]
+  "groups": ["Acquaintance", "Friend", "Family"]
 }
