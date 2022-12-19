@@ -2,102 +2,117 @@
   "contacts": [
     {
       "id": 1,
+      "photo": "https://images.unsplash.com/photo-1542206395-9feb3edaa68d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzR8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
       "name": "Leanne Graham",
       "email": "Sincere@april.biz",
-      "group": "Friend",
+      "group": 2,
       "mobile": "1-770-736-8031",
       "website": "hildegard.org",
       "job": "Accountant"
     },
     {
       "id": 2,
+      "photo": "https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg",
       "name": "Ervin Howell",
       "email": "Shanna@melissa.tv",
-      "group": "Friend",
+      "group": 2,
       "mobile": "010-692-6593",
       "website": "anastasia.net",
       "job": "Financial Analyst"
     },
     {
       "id": 3,
+      "photo": "https://s3.amazonaws.com/uifaces/faces/twitter/olegpogodaev/128.jpg",
       "name": "Clementine Bauch",
       "email": "Nathan@yesenia.net",
-      "group": "Friend",
+      "group": 2,
       "mobile": "1-463-123-4447",
       "website": "ramiro.info",
       "job": "Software Engineer"
     },
     {
       "id": 4,
+      "photo": "https://s3.amazonaws.com/uifaces/faces/twitter/stephenmoon/128.jpg",
       "name": "Patricia Lebsack",
       "email": "Julianne.OConner@kory.org",
-      "group": "Family",
+      "group": 1,
       "mobile": "493-170-9623",
       "website": "kale.biz",
       "job": "Karate Instructor"
     },
     {
       "id": 5,
+      "photo": "https://s3.amazonaws.com/uifaces/faces/twitter/araa3185/128.jpg",
       "name": "Chelsey Dietrich",
       "email": "Lucio_Hettinger@annie.ca",
-      "group": "Family",
+      "group": 1,
       "mobile": "(254)954-1289",
       "website": "demarco.info",
       "job": "Teacher"
     },
     {
       "id": 6,
+      "photo": "https://s3.amazonaws.com/uifaces/faces/twitter/bigmancho/128.jpg",
       "name": "Mrs. Dennis Schulist",
       "email": "Karley_Dach@jasper.info",
-      "group": "Family",
+      "group": 1,
       "mobile": "1-477-935-8478",
       "website": "ola.org",
       "job": "Doctor"
     },
     {
       "id": 7,
+      "photo": "https://s3.amazonaws.com/uifaces/faces/twitter/russoedu/128.jpg",
       "name": "Kurtis Weissnat",
       "email": "Telly.Hoeger@billy.biz",
-      "group": "Acquiantance",
+      "group": 3,
       "mobile": "210.067.6132",
       "website": "elvis.io",
       "job": "Lawyer"
     },
     {
       "id": 8,
+      "photo": "https://s3.amazonaws.com/uifaces/faces/twitter/nickfratter/128.jpg",
       "name": "Nicholas Runolfsdottir V",
       "email": "Sherwood@rosamond.me",
-      "group": "Acquiantance",
+      "group": 3,
       "mobile": "586.493.6943",
       "website": "jacynthe.com",
       "job": "Construction Foreman"
     },
     {
       "id": 9,
+      "photo": "https://s3.amazonaws.com/uifaces/faces/twitter/stephenmoon/128.jpg",
       "name": "Glenna Reichert",
       "email": "Chaim_McDermott@dana.io",
-      "group": "Acquiantance",
+      "group": 3,
       "mobile": "(775)976-6794",
       "website": "conrad.com",
       "job": "Animal Trainer"
     },
     {
       "id": 10,
+      "photo": "https://s3.amazonaws.com/uifaces/faces/twitter/olegpogodaev/128.jpg",
       "name": "Clementina DuBuque",
       "email": "Rey.Padberg@karina.biz",
-      "group": "Acquiantance",
+      "group": 3,
       "mobile": "024-648-3804",
       "website": "Banker"
     },
     {
       "id": 12,
+      "photo": "https://s3.amazonaws.com/uifaces/faces/twitter/calebogden/128.jpg",
       "name": "Ricardo Zav",
       "email": "ggggg@karina.biz",
-      "group": "Acquiantance",
+      "group": 3,
       "mobile": "702-848-3809",
       "website": "www.www.com",
       "job": "Tester"
     }
   ],
-  "groups": ["Acquaintance", "Friend", "Family"]
+  "groups": [
+    { "id": 1, "name": "Family" },
+    { "id": 2, "name": "Friend" },
+    { "id": 3, "name": "Acquiantance" }
+  ]
 }

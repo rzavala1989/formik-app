@@ -1,0 +1,10 @@
+export * as contact1 from './contact1.jpg';
+export * as contact2 from './contact2.jpg';
+export * as contact3 from './contact3.jpg';
+export * as contact4 from './contact4.jpg';
+export * as contact5 from './contact5.jpg';
+export * as contact6 from './contact6.jpg';
+export * as contact7 from './contact7.jpg';
+export * as contact8 from './contact8.jpg';
+export * as contact9 from './contact9.jpg';
+export * as contact10 from './contact10.jpg';

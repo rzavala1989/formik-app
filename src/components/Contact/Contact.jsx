@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { BsFillTrashFill, BsFillPencilFill, BsEyeFill } from 'react-icons/bs';
 
 const Contact = ({ contact, deleteContact }) => {
   return (
@@ -28,24 +29,24 @@ const Contact = ({ contact, deleteContact }) => {
                   </li>
                 </ul>
               </div>
-              <div className='col-md-1 col-sm-1 d-flex gy-sm-2 flex-row flex-sm-column justify-content-around align-items-center'>
+              <div className='col-md-1 col-sm-1 d-flex gy-sm-2 text-white flex-row flex-sm-column justify-content-around align-items-center'>
                 <Link
                   to={`/contacts/${contact.id}`}
                   className='btn my-1 btn-outline-success'
                 >
-                  <i className='fa fa-eye'></i>
+                  <BsEyeFill />
                 </Link>
                 <Link
                   to={`/contacts/edit/${contact.id}`}
                   className='btn my-1 btn-outline-warning'
                 >
-                  <i className='fa fa-pencil'></i>
+                  <BsFillPencilFill />
                 </Link>
                 <button
                   onClick={deleteContact}
                   className='btn my-1 btn-outline-danger'
                 >
-                  <i className='fa fa-trash'></i>
+                  <BsFillTrashFill />{' '}
                 </button>
               </div>
             </div>

@@ -27,7 +27,7 @@ export const getAllGroups = () => {
 // http:/localhost:5000/groups/:groupId
 
 export const getGroup = (groupId) => {
-  return axios.get(`${SERVER_URL}/contacts/${groupId}`);
+  return axios.get(`${SERVER_URL}/groups/${groupId}`);
 };
 
 // Create New Contact

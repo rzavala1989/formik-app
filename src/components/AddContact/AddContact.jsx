@@ -5,13 +5,22 @@ import { Formik, Field, ErrorMessage } from 'formik';
 import { Container, Row, Form } from 'react-bootstrap';
 import { contactSchema } from '../../validations/contactValidation';
 import FormikForm from './FormikForm/FormikForm';
+import Spinner from '../Spinner/Spinner';
 
 const AddContact = () => {
-  const { addContact, groups, loading } = useContext(contactContext);
+  const { addContact, loading } = useContext(contactContext);
+
+  const handleSubmit = (e, values) => {
+    e.preventDefault();
+    addContact(values);
+  };
+
   return (
     <>
       {loading ? (
-        'Loading...'
+        <div>
+          <Spinner />
+        </div>
       ) : (
         <section className='p-3'>
           <Container>
@@ -24,15 +33,17 @@ const AddContact = () => {
                   initialValues={{
                     name: '',
                     email: '',
+                    photo: '',
                     mobile: '',
                     group: '',
                     job: '',
                     website: '',
                   }}
                   validateOnChange={true}
+                  validateOnBlur={true}
                   validationSchema={contactSchema}
                   onSubmit={(values, actions) => {
-                    addContact(values);
+                    handleSubmit(values);
                     actions.resetForm();
                     actions.setSubmitting(false);
                   }}

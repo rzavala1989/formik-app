@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { contactContext } from '../../../context/contactContext';
 import { useFormikContext, Field, ErrorMessage } from 'formik';
 import { Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const FormikForm = () => {
+  const { groups } = useContext(contactContext);
   const { errors } = useFormikContext();
   return (
     <>
@@ -13,6 +15,14 @@ const FormikForm = () => {
           <Field as={Form.Control} name='name' isInvalid={!!errors?.name} />
           <ErrorMessage
             name='name'
+            render={(msg) => <div className='text-danger mt-2'>{msg}</div>}
+          />
+        </Form.Group>
+        <Form.Group className='mb-3'>
+          <Form.Label className='text-white'>Photo</Form.Label>
+          <Field as={Form.Control} name='photo' isInvalid={!!errors?.photo} />
+          <ErrorMessage
+            name='photo'
             render={(msg) => <div className='text-danger mt-2'>{msg}</div>}
           />
         </Form.Group>
@@ -34,7 +44,17 @@ const FormikForm = () => {
         </Form.Group>
         <Form.Group className='mb-3'>
           <Form.Label className='text-white'>Group</Form.Label>
-          <Field as={Form.Control} name='group' isInvalid={!!errors?.group} />
+          <Field as={Form.Select} name='group' isInvalid={!!errors?.group}>
+            <option value='' className='text-white'>
+              Select Groups
+            </option>
+            {groups.length > 0 &&
+              groups.map((group) => (
+                <option key={group.id} value={group.id}>
+                  {group.name}
+                </option>
+              ))}
+          </Field>
           <ErrorMessage
             name='group'
             render={(msg) => <div className='text-danger mt-2'>{msg}</div>}

@@ -3,6 +3,7 @@ import Contact from '../Contact/Contact';
 import ContactNotFound from '../ContactNotFound/ContactNotFound';
 import { Link } from 'react-router-dom';
 import { contactContext } from '../../context/contactContext';
+import Spinner from '../Spinner/Spinner';
 
 const Contacts = () => {
   const { filteredContacts, deleteContact, loading } =
@@ -18,7 +19,9 @@ const Contacts = () => {
           </div>
         </div>
         {loading ? (
-          'Loading...'
+          <div>
+            <Spinner />
+          </div>
         ) : (
           <div className='container'>
             <div className='row'>
